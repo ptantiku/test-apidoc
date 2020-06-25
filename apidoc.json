@@ -1,0 +1,7 @@
+{
+  "name": "Test APIDoc",
+  "version":  "1.0.0",
+  "description": "Test generating code document using APIDoc",
+  "title": "Test APIDoc",
+  "url": "http://localhost:3000"
+}

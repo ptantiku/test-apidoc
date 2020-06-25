@@ -1,0 +1,24 @@
+{
+  "name": "test-apidoc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ptantiku/test-apidoc.git",
+  "author": "ptantiku <ptantiku@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "dotenv -e .env node ./app.js",
+    "doc": "apidoc -i ./ -o ./doc-html/ -e node_modules && apidoc-markdown -p ./doc-html -o ./doc --multi --createPath && rm -rf ./doc-html"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "dotenv-cli": "^3.2.0",
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "apidoc": "^0.23.0",
+    "apidoc-markdown": "^5.1.4"
+  }
+}
